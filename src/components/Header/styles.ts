@@ -1,4 +1,5 @@
 import { ArrowLeft } from "phosphor-react-native";
+import { Image, View } from "react-native";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -14,7 +15,7 @@ export const BackButton = styled.TouchableOpacity`
 
 export const BackIcon = styled(ArrowLeft).attrs(({ theme }) => ({
   size: 24,
-  color: theme.COLORS.WHITE,
+  color: theme.COLORS.GRAY_100,
 }))``;
 
 export const Logo = styled.Image`
@@ -29,9 +30,16 @@ export const Box = styled.View`
   justify-content: space-between;
 `;
 
-export const ImgProfile = styled.View`
+export const ImgProfile = styled(Image)`
   width: 40px;
   height: 40px;
   border: 2px solid ${({ theme }) => theme.COLORS.GRAY_200};
   border-radius: 999px;
+  justify-content: center;
+`;
+
+export const Title = styled.Text`
+  font-size: 16px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.COLORS.WHITE};
 `;
