@@ -1,10 +1,14 @@
 import React from "react";
-import { Container, Percent } from "./styles";
+import {BackButton, BackIcon, Container, Percent, Subtitle} from "./styles";
 
 export function Porcentagem() {
   return (
     <Container>
-      <Percent>90%</Percent>
+        <BackButton>
+            <BackIcon size={24} />
+        </BackButton>
+      <Percent>90,86%</Percent>
+        <Subtitle>das refeições dentro da dieta</Subtitle>
     </Container>
   );
 }
