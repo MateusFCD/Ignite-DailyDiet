@@ -33,7 +33,6 @@ export const Box = styled.View`
 export const ImgProfile = styled(Image)`
   width: 40px;
   height: 40px;
-  border: 2px solid ${({ theme }) => theme.COLORS.GRAY_200};
   border-radius: 999px;
   justify-content: center;
 `;
